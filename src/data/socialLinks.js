@@ -1,0 +1,17 @@
+export const officialSocialLinks = [
+    {
+        name: 'Facebook',
+        url: 'https://www.facebook.com/share/1dButcyaSK/?mibextid=wwXIfr',
+        icon: 'fa-facebook-f'
+    },
+    {
+        name: 'Instagram',
+        url: 'https://www.instagram.com/unen_aneia?psln=MWgyMnowMWVvYndnYw==',
+        icon: 'fa-instagram'
+    },
+    {
+        name: 'TikTok',
+        url: 'https://www.tiktok.com/@unen_aneia?_r=1&_t=ZS-9AfTn1U8Ucf',
+        icon: 'fa-tiktok'
+    }
+]
