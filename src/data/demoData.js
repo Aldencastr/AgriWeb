@@ -1,3 +1,5 @@
+import assetUrl from '../utils/assetUrl'
+
 export const demoData = {
     nombre: "Ingeniería Agrícola",
     slogan: "Cultivamos innovación para alimentar el futuro",
@@ -46,7 +48,7 @@ export const demoData = {
             descripcion: "Experiencias que fortalecen la formación profesional."
         },
         {
-            imagen: "/images/alden.jpeg",
+            imagen: assetUrl("/images/alden.jpeg"),
             titulo: "Futuros Ingenieros",
             descripcion: "El equipo humano detrás de la innovación del agro."
         },

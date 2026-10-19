@@ -1,3 +1,5 @@
+import assetUrl from '../../utils/assetUrl'
+
 function Noticias({ items = [] }) {
     const values = (Array.isArray(items) ? items : Object.values(items || {}))
         .filter((item) => item && typeof item === 'object')
@@ -16,7 +18,7 @@ function Noticias({ items = [] }) {
                         return (
                             <article className="news-card reveal" key={i}>
                                 <img
-                                    src={n.imagen || '/images/alden.jpeg'}
+                                    src={n.imagen || assetUrl('/images/alden.jpeg')}
                                     alt={n.titulo || ''}
                                     loading="lazy"
                                     width="600"

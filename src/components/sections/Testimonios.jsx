@@ -1,4 +1,5 @@
 import { lazy, Suspense, useState, useEffect } from 'react'
+import assetUrl from '../../utils/assetUrl'
 import { auth, push, signOut, testimoniosRef, onAuthStateChanged } from '../../services/firebase'
 
 const LoginModal = lazy(() => import('../modals/LoginModal'))
@@ -160,7 +161,7 @@ function Testimonios({ items = [] }) {
                         <div className="testimonial-card reveal" key={i}>
                             <p>"{t.texto || ''}"</p>
                             <div className="testimonial-author">
-                                <img src={t.imagen || '/images/logo.jpeg'} alt={t.nombre || 'Usuario'} loading="lazy" />
+                                <img src={t.imagen || assetUrl('/images/logo.jpeg')} alt={t.nombre || 'Usuario'} loading="lazy" />
                                 <div className="testimonial-author-info">
                                     <h4>{t.nombre || 'Usuario'}</h4>
                                     <span>{t.rol || ''}</span>

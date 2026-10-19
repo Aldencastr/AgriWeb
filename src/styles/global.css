@@ -3077,7 +3077,7 @@ footer {
 .hero {
     min-height: min(820px, 94vh);
     min-height: min(820px, 94svh);
-    background: linear-gradient(110deg, rgba(10, 25, 16, 0.5), rgba(10, 25, 16, 0.12)), url('/images/alden.jpeg') center 45% / cover no-repeat;
+    background: linear-gradient(110deg, rgba(10, 25, 16, 0.5), rgba(10, 25, 16, 0.12)), var(--hero-image) center 45% / cover no-repeat;
 }
 
 .hero-slide {
