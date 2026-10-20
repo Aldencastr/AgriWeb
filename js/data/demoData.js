@@ -215,26 +215,14 @@ export const demoData = {
         {
             imagen: "images/alden.jpeg",
             nombre: "Ing. Alden Castro",
-            rol: "Especialista en Recursos Hídricos y Riego",
-            biografia: "Egresado de Ingeniería Agrícola con experiencia en el diseño y evaluación de sistemas de riego. Impulsor del riego eficiente y sostenible en el agro nacional."
+            rol: "Master en Ciencias del Agua · Consultor en recursos hídricos",
+            biografia: "Maestría en Ciencias del Agua (Universidad Nacional de Ingeniería). Durante cuatro años trabajé como consultor en la realización de estudios de carácter hidrogeológicos e hidrológicos para la gestión de recursos hídricos; aprendí el uso de SIG como herramienta de trabajo principal para el manejo de información y el diseño de mapas temáticos."
         },
         {
             imagen: "images/logo.jpeg",
-            nombre: "Ing. de muestra",
-            rol: "Ingeniero Agrícola · contenido demostrativo",
-            biografia: "Biografía de muestra. Reemplázala por la trayectoria autorizada del especialista: formación, área de especialización y proyectos destacados."
-        },
-        {
-            imagen: "https://images.unsplash.com/photo-1507003211169-0a1272a8e396?q=80&w=600&auto=format&fit=crop",
-            nombre: "Ing. de muestra",
-            rol: "Especialista en Maquinaria Agrícola · contenido demostrativo",
-            biografia: "Biografía de muestra. Reemplázala con información verificada y autorizada por la persona retratada."
-        },
-        {
-            imagen: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=600&auto=format&fit=crop",
-            nombre: "Ing. de muestra",
-            rol: "Especialista en Suelos · contenido demostrativo",
-            biografia: "Biografía de muestra. Reemplázala con información verificada y autorizada por la persona retratada."
+            nombre: "Ing. Zadis Vanegas",
+            rol: "Consultora independiente en Consultas Hídricas · Docente UNI",
+            biografia: "Docente en la Universidad Nacional de Ingeniería desde 2021, contribuyo al desarrollo académico con un enfoque en la gestión ambiental y los recursos hídricos. Mi experiencia de más de cinco años incluye el análisis de sistemas de tratamiento de aguas residuales y procesos de depuración para garantizar un funcionamiento eficiente."
         }
     ]
 }
