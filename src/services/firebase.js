@@ -1,16 +1,22 @@
 import { initializeApp } from 'firebase/app'
-import { getDatabase, onValue, ref, push } from 'firebase/database'
-import {
-  getAuth,
-  signInWithEmailAndPassword,
-  createUserWithEmailAndPassword,
-  signOut,
-  onAuthStateChanged,
+import { getDatabase, ref, push, onValue } from 'firebase/database'
+import { 
+  getAuth, 
+  signInWithEmailAndPassword, 
+  createUserWithEmailAndPassword, 
+  signOut, 
+  onAuthStateChanged 
 } from 'firebase/auth'
 
 const firebaseConfig = {
-  apiKey: 'BPjSQv5zvbuUbSmSA4ZsrLhCY34zukdpo4HT2F_NfOKUvnCAqDS7GUKMnAhee-HnVckEaLRWPS7IWmvcCR5JQDA',
-  databaseURL: 'https://inge-2e200-default-rtdb.firebaseio.com/',
+  apiKey: "AIzaSyCFz7R02iNeIPPHanIPUHFBaACns898kEY",
+  authDomain: "inge-2e200.firebaseapp.com",
+  databaseURL: "https://inge-2e200-default-rtdb.firebaseio.com",
+  projectId: "inge-2e200",
+  storageBucket: "inge-2e200.firebasestorage.app",
+  messagingSenderId: "48475081198",
+  appId: "1:48475081198:web:890ec295c1a5bf47d3a6ff",
+  measurementId: "G-NSY84LP08N"
 }
 
 const app = initializeApp(firebaseConfig)
@@ -23,9 +29,9 @@ export {
   carreraRef,
   testimoniosRef,
   db,
-  onValue,
   ref,
   push,
+  onValue,
   auth,
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
