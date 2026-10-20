@@ -992,6 +992,11 @@ h6 {
     transition: width 0.1s linear;
 }
 
+.custom-video-player .fullscreen-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
 /* Dark mode adjustments */
 :root.dark .custom-video-player .video-poster {
     filter: brightness(0.9);
