@@ -100,6 +100,12 @@ export function normalizeCareerData(value) {
             'nombre',
             'imagen',
             'descripcion'
+        ]),
+        ingenieros: normalizeItems(source.ingenieros, demoData.ingenieros, [
+            'nombre',
+            'rol',
+            'imagen',
+            'biografia'
         ])
     }
 }

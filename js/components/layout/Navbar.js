@@ -5,6 +5,7 @@ const NAV_ITEMS = [
     { href: '#nosotros', label: 'Nosotros' },
     { href: '#carrera', label: 'Descubre la Carrera' },
     { href: '#plan-estudios', label: 'Plan de Estudios' },
+    { href: '#ingenieros', label: 'Ingenieros' },
     { href: '#testimonios', label: 'Reseñas' }
 ]
 

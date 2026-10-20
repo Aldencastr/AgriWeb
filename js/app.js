@@ -12,6 +12,7 @@ import Laboratorios from './components/sections/Laboratorios.js'
 import Proyectos from './components/sections/Proyectos.js'
 import Noticias from './components/sections/Noticias.js'
 import PlanEstudios, { initPlanEstudios, planReset, planClearSearch } from './components/sections/PlanEstudios.js'
+import Ingenieros from './components/sections/Ingenieros.js'
 import Testimonios, {
     createTestimoniosState,
     getTestimoniosState,
@@ -30,6 +31,7 @@ const VIEW_IDS = new Set([
     'nosotros',
     'carrera',
     'plan-estudios',
+    'ingenieros',
     'testimonios',
     'contacto',
     'carrusel',
@@ -100,6 +102,8 @@ function renderActiveView() {
             return Videos({ videos: state.data.videos })
         case 'plan-estudios':
             return PlanEstudios()
+        case 'ingenieros':
+            return Ingenieros({ items: state.data.ingenieros })
         case 'testimonios':
             return Testimonios({
                 items: state.data.testimonios || state.data.resenas,

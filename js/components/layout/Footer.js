@@ -42,6 +42,7 @@ export function renderFooter(connectionState = 'loading') {
                             <li><a href="#nosotros">Nosotros</a></li>
                             <li><a href="#carrera">Descubre la Carrera</a></li>
                             <li><a href="#plan-estudios">Plan de Estudios</a></li>
+                            <li><a href="#ingenieros">Ingenieros Especializados</a></li>
                             <li><a href="#testimonios">Reseñas</a></li>
                             <li><a href="#contacto">Contacto</a></li>
                         </ul>
