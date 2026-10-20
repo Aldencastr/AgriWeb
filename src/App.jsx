@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback, useRef } from 'react'
 import { HashRouter as Router, Routes, Route, Navigate, useLocation, useNavigate } from 'react-router-dom'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
+import ErrorBoundary from './components/ErrorBoundary'
 import Hero from './components/sections/Hero'
 import Stats from './components/sections/Stats'
 import Perfil from './components/sections/Perfil'
@@ -260,21 +261,23 @@ function App() {
           onToggleDarkMode={toggleDarkMode}
         />
         
-        {/* Main content */}
-        <main id="main-content" className="main-content">
-          <Routes>
-            <Route path="/" element={<InicioView data={data} state={state} actions={actions} />} />
-            <Route path="/nosotros" element={<SectionView section="nosotros" data={data} state={state} actions={actions} />} />
-            <Route path="/carrera" element={<SectionView section="carrera" data={data} state={state} actions={actions} />} />
-            <Route path="/plan-estudios" element={<SectionView section="plan-estudios" data={data} state={state} actions={actions} />} />
-            <Route path="/ingenieros" element={<SectionView section="ingenieros" data={data} state={state} actions={actions} />} />
-            <Route path="/testimonios" element={<SectionView section="testimonios" data={data} state={state} actions={actions} />} />
-            <Route path="/contacto" element={<SectionView section="contacto" data={data} state={state} actions={actions} />} />
-            <Route path="/admision" element={<SectionView section="admision" data={data} state={state} actions={actions} />} />
-            <Route path="/faq" element={<SectionView section="faq" data={data} state={state} actions={actions} />} />
-            <Route path="*" element={<Navigate to="/" replace />} />
-          </Routes>
-        </main>
+        {/* Main content with Error Boundary */}
+        <ErrorBoundary>
+          <main id="main-content" className="main-content">
+            <Routes>
+              <Route path="/" element={<InicioView data={data} state={state} actions={actions} />} />
+              <Route path="/nosotros" element={<SectionView section="nosotros" data={data} state={state} actions={actions} />} />
+              <Route path="/carrera" element={<SectionView section="carrera" data={data} state={state} actions={actions} />} />
+              <Route path="/plan-estudios" element={<SectionView section="plan-estudios" data={data} state={state} actions={actions} />} />
+              <Route path="/ingenieros" element={<SectionView section="ingenieros" data={data} state={state} actions={actions} />} />
+              <Route path="/testimonios" element={<SectionView section="testimonios" data={data} state={state} actions={actions} />} />
+              <Route path="/contacto" element={<SectionView section="contacto" data={data} state={state} actions={actions} />} />
+              <Route path="/admision" element={<SectionView section="admision" data={data} state={state} actions={actions} />} />
+              <Route path="/faq" element={<SectionView section="faq" data={data} state={state} actions={actions} />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
+            </Routes>
+          </main>
+        </ErrorBoundary>
         
         {/* Footer */}
         <Footer connectionState={firebaseUser ? 'connected' : 'warning'} />
