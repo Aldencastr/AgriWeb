@@ -244,6 +244,11 @@ function App() {
   return (
     <Router>
       <div className={`app ${darkMode ? 'dark' : ''} ${menuOpen ? 'menu-open' : ''}`} data-build-marker={__BUILD_MARKER__}>
+        {/* Debug indicator */}
+        <div style={{ position: 'fixed', top: 10, right: 10, zIndex: 9999, background: 'red', color: 'white', padding: '10px', borderRadius: '4px', fontSize: '12px', fontFamily: 'monospace' }}>
+          React App Loaded ✓
+        </div>
+        
         {/* Scroll progress */}
         <div className="scroll-progress" style={{ width: `${Math.min(100, (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100)}%` }} />
         
