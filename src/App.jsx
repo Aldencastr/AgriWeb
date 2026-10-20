@@ -249,7 +249,7 @@ function App() {
         {/* Navbar */}
         <Navbar 
           nombre={data?.nombre}
-          activeView={location.pathname.slice(1) || 'inicio'}
+          activeView={location.hash.slice(2) || 'inicio'}
           menuOpen={menuOpen}
           darkMode={darkMode}
           onToggleMenu={toggleMenu}
