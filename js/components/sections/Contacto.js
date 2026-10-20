@@ -8,12 +8,26 @@ import {
 import { officialSocialLinks } from '../../data/socialLinks.js'
 import { esc } from '../../utils/dom.js'
 
+// Configuración de Formspree - Reemplaza 'TU_FORM_ID' con tu ID real de Formspree
+// Para obtenerlo: 1) Ve a https://formspree.io 2) Crea un formulario 3) Copia el form ID
+// Ejemplo: const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xyzabcde'
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/TU_FORM_ID'
+
+// Helper para obtener la URL de retorno (compatible con SSR/smoke test)
+function getReturnUrl() {
+    if (typeof window !== 'undefined') {
+        return `${window.location.origin}${window.location.pathname}#contacto`
+    }
+    return '#contacto'
+}
+
 const state = { status: '', error: false, submitting: false }
 
 function Contacto({ contacto = {} }) {
     const email = contacto.correo || 'evenorcast@gmail.com'
     const phone = contacto.telefono || '86855972'
     const phoneLink = phone.replace(/[^\d+]/g, '')
+    const returnUrl = getReturnUrl()
 
     return `
         <section id="contacto" class="container section contact-section">
@@ -36,14 +50,17 @@ function Contacto({ contacto = {} }) {
                         <div class="${state.error ? 'form-error' : 'form-success'}" role="${state.error ? 'alert' : 'status'}">
                             ${esc(state.status)}
                         </div>` : ''}
-                    <form class="contact-form" id="contact-form" aria-busy="${state.submitting}">
+                    <form class="contact-form" id="contact-form" action="${FORMSPREE_ENDPOINT}" method="POST" aria-busy="${state.submitting}">
+                        <input type="hidden" name="_next" value="${esc(returnUrl)}" />
+                        <input type="hidden" name="_subject" value="Nuevo mensaje desde Ingeniería Agrícola Web" />
+                        <input type="hidden" name="_replyto" value="${esc(email)}" />
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="contact-nombre">Nombre *</label>
                                 <input
                                     type="text"
                                     id="contact-nombre"
-                                    name="contact-nombre"
+                                    name="name"
                                     autocomplete="name"
                                     placeholder="Tu nombre"
                                     required
@@ -54,7 +71,7 @@ function Contacto({ contacto = {} }) {
                                 <input
                                     type="email"
                                     id="contact-correo"
-                                    name="contact-correo"
+                                    name="email"
                                     autocomplete="email"
                                     placeholder="tu@correo.com"
                                     required
@@ -66,7 +83,7 @@ function Contacto({ contacto = {} }) {
                             <input
                                 type="tel"
                                 id="contact-telefono"
-                                name="contact-telefono"
+                                name="phone"
                                 autocomplete="tel"
                                 placeholder="86855972"
                             />
@@ -75,23 +92,24 @@ function Contacto({ contacto = {} }) {
                             <label for="contact-mensaje">Mensaje *</label>
                             <textarea
                                 id="contact-mensaje"
-                                name="contact-mensaje"
+                                name="message"
                                 placeholder="Escribe tu mensaje aquí..."
                                 rows="4"
                                 required
                             ></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary" ${state.submitting ? 'disabled' : ''}>
+                        <button type="submit" class="btn btn-primary btn-lg" ${state.submitting ? 'disabled' : ''}>
                             ${state.submitting ? 'Enviando...' : 'Enviar mensaje'}
                             <i class="fa-solid fa-paper-plane"></i>
                         </button>
                     </form>
+                    <p class="form-note">Los mensajes llegan directamente a <strong>evenorcast@gmail.com</strong> via Formspree.</p>
                 </div>
 
                 <div class="contact-social">
                     <h4>Síguenos</h4>
                     <p class="social-description">Síguenos en nuestras redes sociales oficiales</p>
-                    <div class="social-links">
+                    <div class="social-links social-links-centered">
                         ${officialSocialLinks.map((social) => `
                             <a
                                 href="${esc(social.url)}"
@@ -144,13 +162,13 @@ export async function submitContacto() {
     state.error = false
 
     const formData = {
-        nombre: form.querySelector('#contact-nombre').value,
-        correo: form.querySelector('#contact-correo').value,
-        telefono: form.querySelector('#contact-telefono').value,
-        mensaje: form.querySelector('#contact-mensaje').value
+        name: form.querySelector('#contact-nombre').value,
+        email: form.querySelector('#contact-correo').value,
+        phone: form.querySelector('#contact-telefono').value,
+        message: form.querySelector('#contact-mensaje').value
     }
 
-    if (!formData.nombre.trim() || !formData.correo.trim() || !formData.mensaje.trim()) {
+    if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
         state.error = true
         state.status = 'Por favor completa los campos obligatorios (nombre, correo y mensaje).'
         return
@@ -158,20 +176,32 @@ export async function submitContacto() {
 
     state.submitting = true
     try {
-        const contactosRef = ref(db, 'Carreras/IngenieriaAgricola/contactos')
-        await push(contactosRef, {
-            nombre: formData.nombre.trim(),
-            correo: formData.correo.trim(),
-            telefono: formData.telefono.trim(),
-            mensaje: formData.mensaje.trim(),
-            fecha: Date.now()
+        // Enviar a Formspree (llega a evenorcast@gmail.com)
+        const response = await fetch(FORMSPREE_ENDPOINT, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify(formData)
         })
-        state.status = '¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.'
+
+        if (!response.ok) throw new Error('Error en Formspree')
+
+        // Backup en Firebase (opcional)
+        try {
+            const contactosRef = ref(db, 'Carreras/IngenieriaAgricola/contactos')
+            await push(contactosRef, {
+                ...formData,
+                fecha: Date.now()
+            })
+        } catch (fbErr) {
+            console.warn('Firebase backup falló (no crítico):', fbErr)
+        }
+
+        state.status = '¡Mensaje enviado con éxito a evenorcast@gmail.com! Te responderemos pronto.'
         form.reset()
     } catch (err) {
-        console.error('Error al guardar contacto:', err)
+        console.error('Error al enviar:', err)
         state.error = true
-        state.status = 'No se pudo enviar el mensaje. Inténtalo de nuevo.'
+        state.status = 'No se pudo enviar el mensaje. Inténtalo de nuevo o escríbenos directamente a evenorcast@gmail.com'
     } finally {
         state.submitting = false
     }
