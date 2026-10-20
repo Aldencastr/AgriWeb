@@ -268,6 +268,13 @@ document.addEventListener('click', (event) => {
             }
             break
         }
+        case 'open-external-video': {
+            const url = actionEl.dataset.url
+            if (url) {
+                window.open(url, '_blank', 'noopener,noreferrer')
+            }
+            break
+        }
         case 'lab-open':
             Laboratorios.open(Number(actionEl.dataset.index))
             break
