@@ -23,6 +23,9 @@ import { normalizeCareerData } from './data/normalizeCareerData'
 import { onAuthStateChanged, signOut as firebaseSignOut } from './services/firebase'
 import { useToast } from './hooks/useToast'
 
+// Cache busting marker - referenced in JSX to prevent optimization
+const __BUILD_MARKER__ = '2026-10-20-5'
+
 // Vista de inicio que compone las secciones
 function InicioView({ data, state, actions }) {
   return (
@@ -239,7 +242,7 @@ function App() {
 
   return (
     <Router>
-      <div className={`app ${darkMode ? 'dark' : ''} ${menuOpen ? 'menu-open' : ''}`}>
+      <div className={`app ${darkMode ? 'dark' : ''} ${menuOpen ? 'menu-open' : ''}`} data-build-marker={__BUILD_MARKER__}>
         {/* Scroll progress */}
         <div className="scroll-progress" style={{ width: `${Math.min(100, (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100)}%` }} />
         
