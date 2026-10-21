@@ -1,0 +1,1 @@
+export { CarreraSection } from './carrera'

@@ -1,0 +1,1 @@
+export { TestimoniosSection } from './testimonios'

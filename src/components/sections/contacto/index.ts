@@ -1,0 +1,1 @@
+export { ContactoSection } from './contacto'

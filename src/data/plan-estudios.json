@@ -1,0 +1,174 @@
+{
+  "universidad": "Universidad Nacional de Ingeniería (UNI)",
+  "carrera": "Ingeniería Agrícola",
+  "plan": "Plan de Estudio 2026",
+  "modalidades": [
+    {
+      "nombre": "Modalidad Presencial",
+      "descripcion": "Carrera de Ingeniería Agrícola en modalidad presencial. Clases diurnas en el campus UNI-RUPAP con acceso completo a laboratorios, finca experimental y talleres."
+    },
+    {
+      "nombre": "Modalidad Semipresencial (Programa UNICAM)",
+      "descripcion": "Clases los domingos en la Finca Agrícola Experimental UNI. Diseñada para profesionales que trabajan. Combina sesiones presenciales quincenales con plataforma virtual de apoyo."
+    }
+  ],
+  "anios": [
+    {
+      "numero": 1,
+      "nombre": "I Año",
+      "semestres": [
+        {
+          "numero": 1,
+          "nombre": "I Semestre",
+          "asignaturas": [
+            { "codigo": "AC2101", "nombre": "Identidad Nacional y Orgullo Patrio", "creditos": 2, "horas": 3, "tipo": "regular" },
+            { "codigo": "AC2102", "nombre": "Matemática I", "creditos": 5, "horas": 6, "tipo": "regular", "prerrequisitos": [] },
+            { "codigo": "AC2103", "nombre": "Química General", "creditos": 4, "horas": 5, "tipo": "regular" },
+            { "codigo": "AC2104", "nombre": "Competencias Digitales", "creditos": 2, "horas": 3, "tipo": "regular" },
+            { "codigo": "AG2105", "nombre": "Introducción a la Ingeniería Agrícola", "creditos": 3, "horas": 4, "tipo": "regular" },
+            { "codigo": "AC2106", "nombre": "Redacción Técnica", "creditos": 2, "horas": 3, "tipo": "regular" }
+          ]
+        },
+        {
+          "numero": 2,
+          "nombre": "II Semestre",
+          "asignaturas": [
+            { "codigo": "AC2107", "nombre": "Geometría Descriptiva", "creditos": 3, "horas": 4, "tipo": "regular" },
+            { "codigo": "AC2108", "nombre": "Matemática II", "creditos": 5, "horas": 6, "tipo": "regular", "prerrequisitos": ["AC2102"] },
+            { "codigo": "AC2109", "nombre": "Física I", "creditos": 4, "horas": 5, "tipo": "regular" },
+            { "codigo": "AC2110", "nombre": "Introducción a la Programación", "creditos": 3, "horas": 4, "tipo": "regular" },
+            { "codigo": "AC2111", "nombre": "Historia e Identidad Nacional", "creditos": 2, "horas": 3, "tipo": "regular" },
+            { "codigo": "AC2112", "nombre": "Inglés Comunicativo A1", "creditos": 2, "horas": 3, "tipo": "regular" }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "nombre": "II Año",
+      "semestres": [
+        {
+          "numero": 3,
+          "nombre": "III Semestre",
+          "asignaturas": [
+            { "codigo": "AC2113", "nombre": "Dibujo Técnico", "creditos": 3, "horas": 4, "tipo": "regular" },
+            { "codigo": "AC2114", "nombre": "Matemática III", "creditos": 5, "horas": 6, "tipo": "regular", "prerrequisitos": ["AC2108"] },
+            { "codigo": "AC2115", "nombre": "Física II", "creditos": 4, "horas": 5, "tipo": "regular", "prerrequisitos": ["AC2109"] },
+            { "codigo": "AC2116", "nombre": "Estadística", "creditos": 3, "horas": 4, "tipo": "regular" },
+            { "codigo": "AG2117", "nombre": "Estática", "creditos": 3, "horas": 4, "tipo": "regular" },
+            { "codigo": "AC2118", "nombre": "Inglés Comunicativo A2", "creditos": 2, "horas": 3, "tipo": "regular", "prerrequisitos": ["AC2112"] },
+            { "codigo": "AG21P1", "nombre": "Práctica Profesional I", "creditos": 4, "horas": 160, "tipo": "practica" }
+          ]
+        },
+        {
+          "numero": 4,
+          "nombre": "IV Semestre",
+          "asignaturas": [
+            { "codigo": "AG2119", "nombre": "Edafología", "creditos": 4, "horas": 5, "tipo": "regular" },
+            { "codigo": "AG2120", "nombre": "Materiales de Construcción", "creditos": 3, "horas": 4, "tipo": "regular" },
+            { "codigo": "AG2121", "nombre": "Hidráulica I", "creditos": 4, "horas": 5, "tipo": "regular", "prerrequisitos": ["AC2115"] },
+            { "codigo": "AG2122", "nombre": "Dinámica", "creditos": 3, "horas": 4, "tipo": "regular", "prerrequisitos": ["AG2117"] },
+            { "codigo": "AG2123", "nombre": "Sistemas CAD", "creditos": 3, "horas": 4, "tipo": "regular" },
+            { "codigo": "AC2124", "nombre": "Inglés Comunicativo A2+", "creditos": 2, "horas": 3, "tipo": "regular", "prerrequisitos": ["AC2118"] }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 3,
+      "nombre": "III Año",
+      "semestres": [
+        {
+          "numero": 5,
+          "nombre": "V Semestre",
+          "asignaturas": [
+            { "codigo": "AG2125", "nombre": "Buenas Prácticas Agrícolas", "creditos": 3, "horas": 4, "tipo": "regular" },
+            { "codigo": "AC2126", "nombre": "Métodos Numéricos", "creditos": 3, "horas": 4, "tipo": "regular", "prerrequisitos": ["AC2114"] },
+            { "codigo": "AG2127", "nombre": "Hidráulica II", "creditos": 4, "horas": 5, "tipo": "regular", "prerrequisitos": ["AG2121"] },
+            { "codigo": "AG2128", "nombre": "Teoría de Mecanismos y Máquinas", "creditos": 3, "horas": 4, "tipo": "regular", "prerrequisitos": ["AG2122"] },
+            { "codigo": "AC2129", "nombre": "Innovación y Emprendimiento", "creditos": 2, "horas": 3, "tipo": "regular" },
+            { "codigo": "AG2130", "nombre": "Topografía I", "creditos": 3, "horas": 4, "tipo": "regular" }
+          ]
+        },
+        {
+          "numero": 6,
+          "nombre": "VI Semestre",
+          "asignaturas": [
+            { "codigo": "AG2131", "nombre": "Fuerza Motriz en la Agricultura", "creditos": 4, "horas": 5, "tipo": "regular" },
+            { "codigo": "AG2132", "nombre": "Estaciones y Equipos de Bombeo", "creditos": 3, "horas": 4, "tipo": "regular", "prerrequisitos": ["AG2127"] },
+            { "codigo": "AG2133", "nombre": "Mecánica de Suelo", "creditos": 4, "horas": 5, "tipo": "regular" },
+            { "codigo": "AG2134", "nombre": "Ingeniería Económica", "creditos": 3, "horas": 4, "tipo": "regular" },
+            { "codigo": "AC2135", "nombre": "Filosofía de la Ciencia", "creditos": 2, "horas": 3, "tipo": "regular" },
+            { "codigo": "AG2136", "nombre": "Topografía II", "creditos": 3, "horas": 4, "tipo": "regular", "prerrequisitos": ["AG2130"] },
+            { "codigo": "AG21P2", "nombre": "Práctica Profesional II", "creditos": 4, "horas": 160, "tipo": "practica" }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "nombre": "IV Año",
+      "semestres": [
+        {
+          "numero": 7,
+          "nombre": "VII Semestre",
+          "asignaturas": [
+            { "codigo": "AG2137", "nombre": "Mecanización Agrícola I", "creditos": 4, "horas": 5, "tipo": "regular", "prerrequisitos": ["AG2128", "AG2131"] },
+            { "codigo": "AG2138", "nombre": "Ingeniería de Riego I", "creditos": 4, "horas": 5, "tipo": "regular", "prerrequisitos": ["AG2127", "AG2119"] },
+            { "codigo": "AG2139", "nombre": "Resistencia de Materiales", "creditos": 3, "horas": 4, "tipo": "regular", "prerrequisitos": ["AG2122"] },
+            { "codigo": "AG2140", "nombre": "Formulación y Evaluación de Proyectos", "creditos": 3, "horas": 4, "tipo": "regular" },
+            { "codigo": "AG2141", "nombre": "Hidrología Subterránea", "creditos": 3, "horas": 4, "tipo": "regular" },
+            { "codigo": "AG2142", "nombre": "Sistemas de Información Geográfica", "creditos": 3, "horas": 4, "tipo": "regular" }
+          ]
+        },
+        {
+          "numero": 8,
+          "nombre": "VIII Semestre",
+          "asignaturas": [
+            { "codigo": "AG2143", "nombre": "Mecanización Agrícola II", "creditos": 4, "horas": 5, "tipo": "regular", "prerrequisitos": ["AG2137"] },
+            { "codigo": "AG2144", "nombre": "Ingeniería de Riego II", "creditos": 4, "horas": 5, "tipo": "regular", "prerrequisitos": ["AG2138"] },
+            { "codigo": "AC2145", "nombre": "Ambiente y Cambio Climático", "creditos": 3, "horas": 4, "tipo": "regular" },
+            { "codigo": "AG2146", "nombre": "Taller de Culminación de Estudios I", "creditos": 4, "horas": 6, "tipo": "regular" },
+            { "codigo": "AG2147", "nombre": "Construcciones Rurales", "creditos": 3, "horas": 4, "tipo": "regular" }
+          ],
+          "optativas": [
+            {
+              "nombre": "Optativa 1",
+              "opciones": [
+                { "codigo": "AG2101", "nombre": "Electrotecnia", "creditos": 3, "horas": 4, "tipo": "regular" },
+                { "codigo": "AG2102", "nombre": "Producción en Ambientes Controlados", "creditos": 3, "horas": 4, "tipo": "regular" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "nombre": "V Año",
+      "semestres": [
+        {
+          "numero": 9,
+          "nombre": "IX Semestre",
+          "asignaturas": [
+            { "codigo": "AG21P3", "nombre": "Práctica Profesional III", "creditos": 6, "horas": 240, "tipo": "practica" },
+            { "codigo": "AG2149", "nombre": "Explotación de Maquinaria Agrícola", "creditos": 3, "horas": 4, "tipo": "regular", "prerrequisitos": ["AG2143"] },
+            { "codigo": "AG2150", "nombre": "Explotación de Sistemas de Riego", "creditos": 3, "horas": 4, "tipo": "regular", "prerrequisitos": ["AG2144"] },
+            { "codigo": "AG2151", "nombre": "Abastecimiento de Agua", "creditos": 3, "horas": 4, "tipo": "regular" },
+            { "codigo": "AG2152", "nombre": "Taller de Culminación de Estudios II", "creditos": 4, "horas": 6, "tipo": "regular", "prerrequisitos": ["AG2146"] },
+            { "codigo": "AG2153", "nombre": "Gerencia Empresarial", "creditos": 3, "horas": 4, "tipo": "regular" }
+          ],
+          "optativas": [
+            {
+              "nombre": "Optativa 2",
+              "opciones": [
+                { "codigo": "AG2103", "nombre": "Planificación de la Mecanización Agrícola", "creditos": 3, "horas": 4, "tipo": "regular" },
+                { "codigo": "AG2104", "nombre": "Agricultura de Precisión", "creditos": 3, "horas": 4, "tipo": "regular" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

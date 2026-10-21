@@ -1,0 +1,237 @@
+{
+  "nombre": "Ingeniería Agrícola",
+  "slogan": "Cultivamos innovación para alimentar el futuro",
+  "descripcion": "Diseña soluciones sostenibles para el campo combinando ingeniería, tecnología y ciencias agrícolas.",
+  "perfil_valor": [
+    "Agricultura de precisión: usa sensores, drones y datos para optimizar cultivos.",
+    "Gestión del agua: diseña sistemas de riego eficientes y resilientes.",
+    "Maquinaria e innovación: impulsa una producción agropecuaria segura y productiva."
+  ],
+  "contacto": {
+    "facultad": "Universidad Nacional de Ingeniería (UNI)",
+    "correo": "evenorcast@gmail.com",
+    "telefono": "86855972",
+    "ubicacion": "Recinto Universitario Pedro Aráuz Palacios (UNI-RUPAP)",
+    "instituciones": "UNICAM · FAE-Masaya"
+  },
+  "carrusel_hero": [
+    {
+      "imagen": "https://images.unsplash.com/photo-1592636889967-77b0e0e3a238?q=80&w=1920&auto=format&fit=crop",
+      "titulo": "Agricultura de Precisión",
+      "descripcion": "Tecnología al servicio del campo para cosechas más eficientes y sostenibles."
+    },
+    {
+      "imagen": "https://images.unsplash.com/photo-1625246273081-c2639588f444?q=80&w=1920&auto=format&fit=crop",
+      "titulo": "Sistemas de Riego Inteligente",
+      "descripcion": "Gestión hídrica avanzada que optimiza cada gota en cultivos modernos."
+    },
+    {
+      "imagen": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=1920&auto=format&fit=crop",
+      "titulo": "Drones en el Agro",
+      "descripcion": "Monitoreo aéreo y aplicación selectiva para una agricultura del futuro."
+    },
+    {
+      "imagen": "https://images.unsplash.com/photo-1582719471384-894fbb16e074?q=80&w=1920&auto=format&fit=crop",
+      "titulo": "Biotecnología Agrícola",
+      "descripcion": "Mejoramiento genético y cultivos resistentes para alimentar al mundo."
+    },
+    {
+      "imagen": "/images/alden.jpeg",
+      "titulo": "Futuros Ingenieros",
+      "descripcion": "El equipo humano detrás de la innovación del agro."
+    },
+    {
+      "imagen": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=1920&auto=format&fit=crop",
+      "titulo": "Fertirrigación",
+      "descripcion": "La clave para un riego eficiente y sostenible."
+    }
+  ],
+  "carrusel": [
+    {
+      "imagen": "https://images.unsplash.com/photo-1592636889967-77b0e0e3a238?q=80&w=1000&auto=format&fit=crop",
+      "titulo": "Gestión eficiente del agua",
+      "descripcion": "Principios de diseño y evaluación de sistemas de riego para la producción agrícola.",
+      "tags": ["Riego", "Agua", "Diseño"]
+    },
+    {
+      "imagen": "https://images.unsplash.com/photo-1625246273081-c2639588f444?q=80&w=1000&auto=format&fit=crop",
+      "titulo": "Suelos y producción",
+      "descripcion": "Observación y análisis de las propiedades del suelo como base para una producción sostenible.",
+      "tags": ["Suelos", "Producción", "Campo"]
+    },
+    {
+      "imagen": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=1000&auto=format&fit=crop",
+      "titulo": "Tecnología aplicada al agro",
+      "descripcion": "Herramientas de monitoreo y análisis de datos para apoyar decisiones agrícolas.",
+      "tags": ["Tecnología", "Monitoreo", "Datos"]
+    }
+  ],
+  "videos": [
+    {
+      "id": "video-1",
+      "titulo": "¿Qué es la Ingeniería Agrícola?",
+      "descripcion": "Búsqueda de videos introductorios sobre la carrera y su impacto en el sector agropecuario.",
+      "canal": "Búsqueda de referencia",
+      "tipoContenido": "Introducción",
+      "plataforma": "YouTube",
+      "url": "https://www.youtube.com/results?search_query=ingenieria+agricola+introduccion",
+      "thumbnail": "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"
+    },
+    {
+      "id": "video-2",
+      "titulo": "Conoce sobre nuestra carrera",
+      "descripcion": "Conoce la carrera de Ingeniería Agrícola y su aporte al desarrollo del sector agropecuario.",
+      "canal": "Ingeniería Agrícola UNI",
+      "tipoContenido": "Presentación institucional",
+      "plataforma": "Facebook Video",
+      "url": "https://www.facebook.com/watch/?v=1078303833234809",
+      "thumbnail": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=640&auto=format&fit=crop"
+    },
+    {
+      "id": "video-3",
+      "titulo": "Agrícola la mejor",
+      "descripcion": "Un video institucional para descubrir Ingeniería Agrícola y su aporte al campo.",
+      "canal": "Ingeniería Agrícola UNI",
+      "tipoContenido": "Vida universitaria",
+      "plataforma": "Facebook Video",
+      "url": "https://www.facebook.com/share/v/1K5cEdwy93/",
+      "thumbnail": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=640&auto=format&fit=crop"
+    }
+  ],
+  "testimonios": [
+    {
+      "id": "demo-1",
+      "nombre": "María González",
+      "rol": "Estudiante de IV Año · Modalidad Presencial",
+      "imagen": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=300&auto=format&fit=crop",
+      "texto": "La práctica en la finca experimental me permitió aplicar todo lo teórico. Diseñé un sistema de riego por goteo para 5 hectáreas de tomate y vi cómo la tecnología transforma la producción real.",
+      "uid": "demo-user-1",
+      "creadoEn": 1720000000000
+    },
+    {
+      "id": "demo-2",
+      "nombre": "Carlos Mendoza",
+      "rol": "Egresado 2022 · Ingeniero de Riego en Agroexportadora",
+      "imagen": "https://images.unsplash.com/photo-1507003211169-0a1272a8e396?q=80&w=300&auto=format&fit=crop",
+      "texto": "Salí con las herramientas para diseñar sistemas de riego a escala comercial. Hoy gestiono 300 hectáreas de pivote central con telemetría. La base de hidráulica y automatización de la UNI fue clave.",
+      "uid": "demo-user-2",
+      "creadoEn": 1718000000000
+    },
+    {
+      "id": "demo-3",
+      "nombre": "Ana Rodríguez",
+      "rol": "Egresada 2020 · Data Scientist en Café de Altura S.A.",
+      "imagen": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=300&auto=format&fit=crop",
+      "texto": "Los cursos de programación, estadística y SIG me abrieron las puertas al análisis de datos. Uso Sentinel-2 y Python para predecir rendimientos de café. La ingeniería agrícola es más datos de lo que imaginas.",
+      "uid": "demo-user-3",
+      "creadoEn": 1716000000000
+    }
+  ],
+  "noticias": [
+    {
+      "id": "news-1",
+      "imagen": "https://images.unsplash.com/photo-1625246273081-c2639588f444?q=80&w=800&auto=format&fit=crop",
+      "categoria": "Investigación",
+      "titulo": "Nuevo modelo de riego deficitario reduce consumo hídrico 30%",
+      "descripcion": "Investigadores de la facultad publican resultados de 3 años de ensayos en maíz y frijol con riego deficitario controlado por sensores de humedad.",
+      "url": "/blog/riego-deficitario-30-porciento",
+      "creadoEn": 1720000000000
+    },
+    {
+      "id": "news-2",
+      "imagen": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=800&auto=format&fit=crop",
+      "categoria": "Tecnología",
+      "titulo": "Drones multiespectrales para detección temprana de plagas",
+      "descripcion": "Proyecto estudiantil integra NDVI y aprendizaje automático para identificar brotes de cogollero en maíz con 15 días de antelación.",
+      "url": "/blog/drones-plagas-deteccion-temprana",
+      "creadoEn": 1719000000000
+    },
+    {
+      "id": "news-3",
+      "imagen": "https://images.unsplash.com/photo-1592636889967-77b0e0e3a238?q=80&w=800&auto=format&fit=crop",
+      "categoria": "Convenios",
+      "titulo": "Convenio UNI-FAO fortalece capacitación en gestión de agua",
+      "descripcion": "Nuevo acuerdo permite a estudiantes acceder a certificaciones internacionales en riego moderno y gobernanza hídrica.",
+      "url": "/blog/convenio-fao-gestion-agua",
+      "creadoEn": 1718000000000
+    }
+  ],
+  "proyectos": [
+    {
+      "id": "proj-1",
+      "titulo": "Sistema de riego por goteo automatizado con IoT",
+      "imagen": "https://images.unsplash.com/photo-1592636889967-77b0e0e3a238?q=80&w=800&auto=format&fit=crop",
+      "descripcion": "Diseño e implementación de riego por goteo con control remoto via LoRaWAN, sensores de humedad y estación meteorológica. Ahorro de agua 40% vs riego tradicional.",
+      "creadoEn": 1715000000000
+    },
+    {
+      "id": "proj-2",
+      "titulo": "Monitoreo de cultivos con drones y NDVI",
+      "imagen": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=800&auto=format&fit=crop",
+      "descripcion": "Procesamiento de imágenes multiespectrales para generar mapas de vigor vegetativo y zona de manejo diferenciado en caña de azúcar.",
+      "creadoEn": 1714000000000
+    },
+    {
+      "id": "proj-3",
+      "titulo": "Evaluación de aptitud de suelos para riego",
+      "imagen": "https://images.unsplash.com/photo-1625246273081-c2639588f444?q=80&w=800&auto=format&fit=crop",
+      "descripcion": "Mapeo detallado de propiedades físicas y químicas del suelo para zonificación de sistemas de riego en 500 ha del Pacífico norte.",
+      "creadoEn": 1713000000000
+    },
+    {
+      "id": "proj-4",
+      "titulo": "Bombeo solar para riego en zonas aisladas",
+      "imagen": "https://images.unsplash.com/photo-1617940828778-45b737ab1085?q=80&w=800&auto=format&fit=crop",
+      "descripcion": "Dimensionamiento e instalación de sistema fotovoltaico para bombeo de agua en finca sin acceso a red eléctrica. ROI < 4 años.",
+      "creadoEn": 1712000000000
+    }
+  ],
+  "laboratorios": [
+    {
+      "nombre": "Laboratorio de Suelos",
+      "imagen": "https://images.unsplash.com/photo-1582719471384-894fbb16e074?q=80&w=800&auto=format&fit=crop",
+      "descripcion": "Equipado para análisis físico-químico completo: textura, materia orgánica, pH, conductividad, capacidad de intercambio catiónico, curva de retención de humedad."
+    },
+    {
+      "nombre": "Laboratorio de Hidráulica",
+      "imagen": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop",
+      "descripcion": "Canales de ensayo, bancadas de bombas, medidores ultrasónicos, transductores de presión. Pruebas de rendimiento de bombas y válvulas."
+    },
+    {
+      "nombre": "Laboratorio de Mecánica de Suelos",
+      "imagen": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=800&auto=format&fit=crop",
+      "descripcion": "Equipos de compactación Proctor, CBR, cortante directo, triaxial, consolidación, penetrómetro dinámico. Análisis para cimentaciones y caminos rurales."
+    },
+    {
+      "nombre": "Laboratorio de Riego",
+      "imagen": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=800&auto=format&fit=crop",
+      "descripcion": "Bancada de evaluación de emisores de goteo, aspersores, microaspersión. Pruebas de uniformidad de distribución (CU, DU) y curva caudal-presión."
+    },
+    {
+      "nombre": "Laboratorio de Materiales",
+      "imagen": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=800&auto=format&fit=crop",
+      "descripcion": "Ensayo de compresión, flexión, tracción en concreto, acero, bloques, adobes. Verificación de normas NIC/INEN para construcciones rurales."
+    },
+    {
+      "nombre": "Laboratorio de Topografía y GIS",
+      "imagen": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=800&auto=format&fit=crop",
+      "descripcion": "Estaciones totales, GNSS RTK, níveis digitales, drones RTK/PPK, workstations GIS (QGIS, ArcGIS, Google Earth Engine), fotogrametría."
+    }
+  ],
+  "ingenieros": [
+    {
+      "id": "eng-1",
+      "imagen": "/images/alden.jpeg",
+      "nombre": "Ing. Alden Castro",
+      "rol": "Master en Ciencias del Agua · Consultor en recursos hídricos",
+      "biografia": "Maestría en Ciencias del Agua (Universidad Nacional de Ingeniería). Durante cuatro años trabajé como consultor en la realización de estudios de carácter hidrogeológicos e hidrológicos para la gestión de recursos hídricos; aprendí el uso de SIG como herramienta de trabajo principal para el manejo de información y el diseño de mapas temáticos."
+    },
+    {
+      "id": "eng-2",
+      "imagen": "/images/logo.jpeg",
+      "nombre": "Ing. Zadis Vanegas",
+      "rol": "Consultora independiente en Consultas Hídricas · Docente UNI",
+      "biografia": "Docente en la Universidad Nacional de Ingeniería desde 2021, contribuyo al desarrollo académico con un enfoque en la gestión ambiental y los recursos hídricos. Mi experiencia de más de cinco años incluye el análisis de sistemas de tratamiento de aguas residuales y procesos de depuración para garantizar un funcionamiento eficiente."
+    }
+  ]
+}

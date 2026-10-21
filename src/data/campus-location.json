@@ -1,0 +1,9 @@
+{
+  "name": "Recinto Universitario Pedro Aráuz Palacios (UNI-RUPAP)",
+  "latitude": 12.13832,
+  "longitude": -86.22397,
+  "coordinatesLabel": "12.13832° N, -86.22397° O",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=12.13832,-86.22397",
+  "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=12.13832,-86.22397",
+  "embedUrl": "https://maps.google.com/maps?q=12.13832,-86.22397&output=embed&z=17"
+}

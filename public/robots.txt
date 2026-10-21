@@ -1,0 +1,15 @@
+# Robots.txt for AgriWeb
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://agriweb.example.com/sitemap.xml
+
+# Disallow admin/private paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /simuladores/calculadora-riego?*
+Disallow: /simuladores/test-perfil?*
+
+# Crawl-delay for polite crawling
+Crawl-delay: 10

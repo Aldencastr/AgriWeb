@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react'
-import { HashRouter as Router, Routes, Route, Navigate, useLocation, useNavigate } from 'react-router-dom'
+import { Routes, Route, Navigate, useLocation, useNavigate } from 'react-router-dom'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 import ErrorBoundary from './components/ErrorBoundary'
@@ -242,8 +242,7 @@ function App() {
   }
 
   return (
-    <Router>
-      <div className={`app ${darkMode ? 'dark' : ''} ${menuOpen ? 'menu-open' : ''}`} data-build-marker={__BUILD_MARKER__}>
+    <div className={`app ${darkMode ? 'dark' : ''} ${menuOpen ? 'menu-open' : ''}`} data-build-marker={__BUILD_MARKER__}>
         {/* Debug indicator */}
         <div style={{ position: 'fixed', top: 10, right: 10, zIndex: 9999, background: 'red', color: 'white', padding: '10px', borderRadius: '4px', fontSize: '12px', fontFamily: 'monospace' }}>
           React App Loaded ✓
@@ -328,7 +327,6 @@ function App() {
           </button>
         )}
       </div>
-    </Router>
   )
 }
 

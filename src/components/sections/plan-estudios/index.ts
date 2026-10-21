@@ -1,0 +1,1 @@
+export { PlanEstudiosSection } from './plan-estudios'

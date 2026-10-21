@@ -1,0 +1,1 @@
+export { WhatIsSection } from './what-is'
