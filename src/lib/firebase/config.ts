@@ -16,10 +16,15 @@ const firebaseConfig = {
 }
 
 // Validate required config
-const requiredKeys = ['apiKey', 'authDomain', 'projectId', 'appId'] as const
-for (const key of requiredKeys) {
+const requiredKeys: Array<{ key: keyof typeof firebaseConfig; envVar: string }> = [
+  { key: 'apiKey', envVar: 'NEXT_PUBLIC_FIREBASE_API_KEY' },
+  { key: 'authDomain', envVar: 'NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN' },
+  { key: 'projectId', envVar: 'NEXT_PUBLIC_FIREBASE_PROJECT_ID' },
+  { key: 'appId', envVar: 'NEXT_PUBLIC_FIREBASE_APP_ID' },
+]
+for (const { key, envVar } of requiredKeys) {
   if (!firebaseConfig[key]) {
-    throw new Error(`Missing Firebase config: NEXT_PUBLIC_FIREBASE_${key.toUpperCase()}`)
+    throw new Error(`Missing Firebase config: ${envVar}`)
   }
 }
 
